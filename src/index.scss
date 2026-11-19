@@ -485,7 +485,7 @@
             .sse-buttonGroup {
                 display: flex;
                 min-width: 0;
-                background-color: rgba(black, 0.3);
+                background-color: color-mix(in srgb, var(--sse-bkg) 30%, transparent);
                 border-radius: 6px;
 
                 &:not(:has(> :not(.sse-hidden))) {
@@ -523,7 +523,7 @@
                     > g {
                         &.sse-stroke {
                             fill: none;
-                            stroke: black;
+                            stroke: var(--sse-bkg);
                             stroke-width: 2;
                             stroke-linejoin: round;
                             opacity: 0.4;
@@ -1114,7 +1114,7 @@
                 > g {
                     &.sse-stroke {
                         fill: none;
-                        stroke: black;
+                        stroke: var(--sse-bkg);
                         stroke-width: 2;
                         stroke-linejoin: round;
                         opacity: 0.4;
@@ -1384,11 +1384,11 @@
             justify-content: center;
 
             color: var(--sse-text);
-            background-color: rgba(black, 0.3);
+            background-color: color-mix(in srgb, var(--sse-bkg) 30%, transparent);
 
             &:hover {
                 color: var(--sse-text-light);
-                background-color: rgba(black, 0.5);
+                background-color: color-mix(in srgb, var(--sse-bkg) 50%, transparent);
             }
 
             > svg {
@@ -1397,7 +1397,7 @@
                 > g {
                     &.sse-stroke {
                         fill: none;
-                        stroke: black;
+                        stroke: var(--sse-bkg);
                         stroke-width: 3;
                         stroke-linecap: round;
                         stroke-linejoin: round;
@@ -1428,7 +1428,7 @@
 
             border-radius: 6px;
             overflow: hidden;
-            background-color: rgba(black, 0.6);
+            background-color: color-mix(in srgb, var(--sse-bkg) 60%, transparent);
 
             > button {
                 width: 34px;
@@ -1436,7 +1436,7 @@
                 background-color: transparent;
 
                 &:hover {
-                    background-color: rgba(white, 0.1);
+                    background-color: color-mix(in srgb, var(--sse-text) 10%, transparent);
                 }
             }
 
@@ -1503,7 +1503,7 @@
                 }
 
                 &:hover {
-                    background-color: rgba(white, 0.1);
+                    background-color: color-mix(in srgb, var(--sse-text) 10%, transparent);
 
                     > .sse-annotationNavNumber,
                     > .sse-annotationNavTitle {
@@ -1531,10 +1531,10 @@
                 transform: translateY(-50%);
                 width: 44px;
                 height: 80px;
-                background-color: rgba(black, 0.3);
+                background-color: color-mix(in srgb, var(--sse-bkg) 30%, transparent);
 
                 &:active {
-                    background-color: rgba(black, 0.4);
+                    background-color: color-mix(in srgb, var(--sse-bkg) 40%, transparent);
                 }
             }
 
